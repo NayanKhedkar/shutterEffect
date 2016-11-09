@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shutter</title>
+</head>
+<style type="text/css">
+.container {
+    border: 2px solid red;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.shutter {
+    background: #9E9E9E;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    display: inline-block;
+}
+
+.content {
+    background: transparent;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    display: inline-block;
+}
+.handle {
+    position: absolute;
+    height: 15px;
+    width: 30px;
+    display: inline-block;
+    background: green;
+    left: 46%;
+    bottom: 0px;
+    z-index: 1;
+}
+.display-none{
+	background: transparent;
+	/*display: none;*/
+}
+</style>
+<script src="shutter.js">
+</script>
+
+<body onload='windowOnload();'>
+    <div id="container" class="container">
+        <div id="content" class="content"></div>
+        <div id="shutter" class="shutter">
+            <div id="handle" class="handle"></div>
+        </div>
+    </div>
+</body>
+
+</html>
